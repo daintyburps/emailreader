@@ -7,9 +7,7 @@ def process_ul(ul_element):
         key = element[0].text
         text = [child.tail.strip() for child in element]
         output[key] = text[0]
-
     return output
-
 
 def main():
     magic = '''<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
